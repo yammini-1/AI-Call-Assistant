@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/tvCurrentMode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Current Mode: "
+        android:textSize="18sp"/>
+
+    <RadioGroup
+        android:id="@+id/rgModes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="12dp">
+
+        <RadioButton
+            android:id="@+id/rbNormal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Normal"/>
+
+        <RadioButton
+            android:id="@+id/rbStudy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Study"
+            android:layout_marginStart="16dp"/>
+
+        <RadioButton
+            android:id="@+id/rbSleep"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sleep"
+            android:layout_marginStart="16dp"/>
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/tvInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ye sirf basic mode selector hai. Call handling baad me add karenge."
+        android:layout_marginTop="24dp"/>
+
+</LinearLayout>
